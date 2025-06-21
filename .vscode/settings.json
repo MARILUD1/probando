@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "probando"
+    
+  "liveServer.settings.multiRootWorkspaceName": "probando",
+  "liveServer.settings.noBrowser": false,
+  "liveServer.settings.CustomBrowser": "chrome"
 }
