@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DESARROLLO DE APLICACIONES</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Aplicaciones Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Universidad Estatal Amazonica</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cuarto Ciclo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Desarrollo de Aplicaciones Web</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <div class="container mt-5">
+    <h1 class="text-center">Fundamentos del desarrollo Web</h1>
+    <h2>¿Qué significa HTML?</h2>
+    <p><strong>En resumen:</strong> <em>HTML es la base fundamental de cualquier sitio web. Es el lenguaje que estructura la información para que los navegadores puedan interpretarla y mostrarla adecuadamente.</em></p>
+    <img src="imagen_html.jpg" alt="Logo de HTML" class="img-fluid mb-3" />
+
+    <!-- Video -->
+    <div class="ratio ratio-16x9 mb-5">
+      <iframe src="https://www.youtube.com/embed/iWfncDG3M90?si=IwzEb3kIy0pbzjdP" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Grid de tarjetas: HTML, CSS, JavaScript en 3 columnas -->
+  <div class="container mb-5">
+    <div class="row">
+      <!-- Tarjeta HTML -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="imagen_html.jpg" class="card-img-top img-fluid" alt="HTML" />
+          <div class="card-body">
+            <h3 class="card-title">HTML</h3>
+            <p class="card-text">Lenguaje de marcado para estructurar contenido web.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta CSS -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="CSS.jpg" class="card-img-top img-fluid" alt="CSS" />
+          <div class="card-body">
+            <h3 class="card-title">CSS</h3>
+            <p class="card-text">Sirve para aplicar estilos y colores a las páginas web.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta JavaScript -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="JavaScript.jpg" class="card-img-top img-fluid" alt="JavaScript" />
+          <div class="card-body">
+            <h3 class="card-title">JavaScript</h3>
+            <p class="card-text">Lenguaje que añade interactividad a los sitios web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario -->
+  <div class="container mb-5">
+    <h2>Contáctanos</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label"><strong>Nombre</strong></label>
+        <input type="text" class="form-control" id="name" name="user_name" />
+      </div>
+      <div class="mb-3">
+        <label for="mail" class="form-label"><strong>Cédula</strong></label>
+        <input type="text" class="form-control" id="mail" name="user_mail" />
+      </div>
+      <div class="mb-3">
+        <label for="msg" class="form-label"><strong>Dirección</strong></label>
+        <textarea class="form-control" id="msg" name="user_message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Listas -->
+  <div class="container mb-5">
+    <ul>
+      <li>Nombre</li>
+      <li>Cédula</li>
+      <li>Dirección</li>
+    </ul>
+
+    <ol>
+      <li>Nombres Completos</li>
+      <li>Colocar el número de cédula sin guión</li>
+      <li>Ciudad y calles principales</li>
+    </ol>
+  </div>
+
+  <!-- Tabla -->
+  <div class="container mb-5">
+    <table class="table table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th>Estudiante</th>
+          <th>Paralelo</th>
+          <th>Curso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan Carrión</td>
+          <td>A</td>
+          <td>Tercero</td>
+        </tr>
+        <tr>
+          <td>Katla Cajamarca</td>
+          <td>B</td>
+          <td>Cuarto</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Collapse -->
+  <div class="container mb-5">
+    <p>
+      <a class="btn btn-secondary" data-bs-toggle="collapse" href="#Nota" role="button" aria-expanded="false" aria-controls="Nota">
+        Ver Resumen
+      </a>
+    </p>
+    <div class="collapse" id="Nota">
+      <div class="card card-body">
+        <article>
+          <h3>Resumen</h3>
+          <p>HTML organiza el contenido de las páginas web para que los navegadores puedan mostrarlo correctamente.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center bg-light py-4">
+    <p>@Contenido recopilado de páginas web</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
