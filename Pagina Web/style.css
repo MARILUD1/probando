@@ -1,32 +1,36 @@
+
+/*Fondo  de la página */
 body {
-  background-color: #f0f8ff;
+  background-color: #f0a0f8;
+
+  h1 {
+    color: red; /* Esto es inválido en CSS puro */
+  }
 }
+
+/* Botón primario */
 .btn-primary {
   background-color: #33aaff;
   border-color: #63ff33;
   transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #cc4626;
-  transform: scale(1.05);
-}
 
 /* Tarjetas con bordes redondeados y sombra */
 .card {
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(1,1,1,1.1);
+  box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1);
 }
 
+h3 {
+  background-color: chartreuse;
+}
+
+/* Estilos responsivos para móviles */
 @media (max-width: 576px) {
   body {
     background-color: #f975ee;
   }
 
-  h1 {
-    color: #ff5733;
-    
-  }}
-  h3{
-    background-color: chartreuse;
-  }
+  
+}
