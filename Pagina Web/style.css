@@ -4,8 +4,7 @@ body {
   background-color: #f0a0f8;
 
   h1 {
-    color: red; /* Esto es inválido en CSS puro */
-  }
+    color: red; 
 }
 
 /* Botón primario */
@@ -33,4 +32,4 @@ h3 {
   }
 
   
-}
+}}
