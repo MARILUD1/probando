@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    color: rgb(233, 238, 132);
+    color: rgb(22, 1, 40);
 }
 
 .card {
@@ -15,7 +15,7 @@ h1 {
 
 h3 {
     background-color: rgb(236, 149, 153); /* Este color no se verá si el texto es oscuro. Considera cambiar el color del texto a blanco si lo mantienes. */
-    color: rgb(115, 220, 117); /* Añadido para que el texto sea visible */
+    color: rgb(136, 10, 10); /* Añadido para que el texto sea visible */
     padding: 5px; /* Pequeño padding para h3 dentro de las tarjetas */
     border-radius: 5px 5px 0 0; /* Bordes redondeados en la parte superior */
 }
@@ -97,7 +97,7 @@ input, button {
 }
 
 input.valid {
-    border: 2px solid #28a745;
+    border: 2px solid #640270;
 }
 
 input.invalid {
