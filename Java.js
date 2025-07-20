@@ -251,3 +251,63 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Ejecutar cuando el DOM esté completamente cargado
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Botón de alerta
+    const alertaBtn = document.getElementById('alertaBtn');
+    if (alertaBtn) {
+        alertaBtn.addEventListener('click', function () {
+            alert('¡Gracias por visitar nuestra página! 😄');
+        });
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+  var miCarrusel = document.querySelector('#miCarrusel');
+  if (miCarrusel) {
+    var carousel = new bootstrap.Carousel(miCarrusel, {
+      interval: 150
+      
+      , // Cambia el tiempo aquí (en milisegundos)
+      ride: 'carousel'
+    });
+  }
+});
+
+    // Validación del formulario
+    const formulario = document.getElementById('formularioContacto');
+    if (formulario) {
+        formulario.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value.trim();
+            const correo = document.getElementById('correo').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
+            const alerta = document.getElementById('alerta');
+
+            if (!nombre || !correo || !mensaje) {
+                alerta.textContent = 'Todos los campos son obligatorios.';
+                alerta.className = 'alert alert-danger';
+                alerta.style.display = 'block';
+            } else if (!/\S+@\S+\.\S+/.test(correo)) {
+                alerta.textContent = 'Ingrese un correo electrónico válido.';
+                alerta.className = 'alert alert-warning';
+                alerta.style.display = 'block';
+            } else {
+                alerta.textContent = 'Formulario enviado correctamente.';
+                alerta.className = 'alert alert-success';
+                alerta.style.display = 'block';
+                formulario.reset();
+            }
+        });
+    }
+
+    // Muestra mensaje en consola al seleccionar tarea
+    const tareas = document.querySelectorAll('.list-group-item');
+    tareas.forEach(item => {
+        item.addEventListener('click', function () {
+            console.log(`Tarea seleccionada: ${this.textContent}`);
+        });
+    });
+
+});

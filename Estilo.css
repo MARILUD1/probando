@@ -137,3 +137,19 @@ button {
     border-radius: 5px;
     padding: 10px;
 }
+#miCarrusel .carousel-item img {
+  height: 1OOpx; /* Puedes ajustar este valor */
+  object-fit: contain;
+}
+
+/* Opcional: limitar el ancho del carrusel y centrarlo */
+#miCarrusel {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+/* Estilo adicional para el mensaje de reacción */
+#mensajeReaccion {
+  font-weight: bold;
+  color: green;
+}
